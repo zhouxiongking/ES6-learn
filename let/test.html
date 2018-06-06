@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+
+<script>
+    var lis = document.getElementsByTagName('li');
+    console.log(lis.length); // 4
+    for (let i = 0; i < lis.length; i++) {
+        lis[i].onclick = function () {
+            alert(i);
+        }
+    }
+</script>
+
+</body>
+</html>
